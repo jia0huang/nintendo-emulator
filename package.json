@@ -1,0 +1,44 @@
+{
+  "name": "nintendo-emulator",
+  "version": "1.0.0",
+  "description": "A JavaScript NINTENDO ENVIROMENT SYSTEM emulator",
+  "homepage": "https://github.com/jia0huang/nintendo-emulator",
+  "author": "",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jia0huang/nintendo-emulator.git"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "webpack",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck && prettier-check src/**/*.js && mocha ./test/*.spec.js",
+    "test:watch": "mocha -w ./test/*.spec.js",
+    "prepublish": "npm run build",
+    "format": "prettier --write src/**/*.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "chai": "^5.2.1",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-webpack-plugin": "^4.0.1",
+    "mocha": "^11.7.1",
+    "prettier": "^3.6.2",
+    "prettier-check": "^2.0.0",
+    "sinon": "^21.0.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "typescript": "^5.8.3",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/jia0huang/nintendo-emulator/issues"
+  },
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "keywords": []
+}
